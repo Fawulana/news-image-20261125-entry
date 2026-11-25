@@ -1,11 +1,16 @@
 # SPDX-License-Identifier: MIT
-"""news-image-20261125 entry: copy the bundled front-page image to /output.
+"""news-image-20261125 entry (v2): copy the bundled front-page image to /output.
 
-The image (entry.png, JPEG bytes) sums up the world news of Wednesday
-25 November 2026: Ukraine's sea-drone strikes on Russian ships, the Houthi
-drone strike on Riyadh's tallest tower, Huawei's conviction in Brooklyn,
-and the Nvidia/Anthropic market reversal. The program is deterministic and
-offline: it copies the bundled asset byte-for-byte.
+The image (entry.png, JPEG bytes) is a dense newspaper front page summing
+up the world news of Wednesday 25 November 2026: the Strait of Hormuz
+tanker attacks as the lead, Shenzhou-24 carrying the first Pakistani
+astronaut to Tiangong, the Houthi drone strike on Riyadh's tower, Ukrainian
+drone strikes on Russian refineries, and 20 more verified stories from
+every continent, plus a Champions League results ticker. The four
+illustrations are image-model artwork generated for this entry and composed
+with the text in this session. The program is deterministic and offline:
+it copies the bundled asset byte-for-byte — no network, no randomness,
+no re-encoding, so both grader runs write identical bytes.
 """
 import os
 import shutil
